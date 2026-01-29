@@ -11,9 +11,13 @@ students = [
 ]
 
 # TODO 1: Print all student names
-
+for each_stu in students:
+    stu_name=each_stu["name"]
+    print(stu_name, end=" ")
 # TODO 2: Print only GSAS students (name + credits)
-
+for each_stu in students:
+    if each_stu["school"]=="GSAS":
+        print(each_stu["name"],each_stu["credits"])
 # TODO 3: Add a new field to each row:
 #   status='full-time' if credits >= 30 else 'part-time'
 
